@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    height: 50px;
+    background-color: #F5F5F6;
+    justify-content: space-between;
+    padding: 10px 110px;
+}
+
+.logo {
+    line-height: 45px;
+    align-items: center;
+}
+
+nav ul {
+    font-size: 11px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 30px;
+    color: #959BA4;
+}
+
+nav ul li:first-child {
+    color: black;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+nav button {
+    background-color: white;
+    font-size: 11px;
+    font-weight: 500;
+    border: none;
+    padding: 5px 10px;
+}
+
+nav button:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 56px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 33px;
+}
+
+.container2 p {
+    font-size: 12px;
+    color: #9F9F9F;
+    margin-bottom: 6px;
+}
+
+h1::selection {
+    background-color: #833AE0;
+    color: white;
+}
+
+.valute, .valute2 {
+    display: flex;
+    gap: 0;
+    border-radius: 5px;
+    border: 1px solid #C6C6C6;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.valute label, .valute2 label {
+    border: none;
+    padding: 8px 20px;
+    border-left: 1px solid #C6C6C6;
+    color: #c6c6c6;
+    font-size: 12px;
+    background-color: white;
+}
+
+.first {
+    border-left: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.last {
+    border-radius: 0 5px 5px 0 !important;
+}
+
+.valute label:hover, .valute2 label:hover {
+    cursor: pointer;
+    background-color: #954ff1;
+    color: white;
+    transition: all 300ms;
+}
+
+.valute input, .valute2 input {
+    display: none;
+}
+
+input[type=radio]:checked + label {
+    background-color: #954ff1;
+    color: white;
+}
+
+.calculator {
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    width: 256px;
+    height: 102px;
+}
+
+.calculator input, .calculator .result {
+    border: none;
+    padding: 0 14px;
+    font-size: 36px;
+    font-weight: 700;
+    width: 254px;
+    overflow: hidden;
+    height: 80px;
+}
+
+.result {
+    margin-top: 11px;
+    margin-bottom: -11px;
+}
+
+.calculator p {
+    margin-left: 14px;
+}
+
+.container2 {
+    display: flex;
+    gap: 123px;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 60px 0 0 0;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}

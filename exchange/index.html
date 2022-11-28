@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <img alt="" src="logo.svg">
+    </div>
+    <ul>
+        <li>БАНК</li>
+        <li>БИЗНЕС</li>
+        <li>ИНВЕСТИЦИИ</li>
+        <li>СТРАХОВАНИЕ</li>
+        <li>МОБАЙЛ</li>
+        <li>ПУТЕШЕСТВИЯ</li>
+        <li>РАЗВЛЕЧЕНИЯ</li>
+    </ul>
+    <button>ВОЙТИ</button>
+</nav>
+
+<main>
+    <div class="container">
+        <h1>Конвертер валют онлайн</h1>
+
+        <div class="container2">
+            <div class="before">
+                <p>У меня есть</p>
+                <div class="valute">
+
+                    <input checked="true" id="rub" name="altt" type="radio">
+                    <label class='first' for="rub" name="altt">RUB</label>
+
+                    <input id="usd" name="altt" type="radio">
+                    <label for="usd">USD</label>
+
+                    <input id="eur" name="altt" type="radio">
+                    <label for="eur">EUR</label>
+
+                    <input id="gbp" name="altt" type="radio">
+                    <label class='last' for="gbp">GBP</label>
+                </div>
+                <div class="calculator">
+                    <input id="value" type="number">
+                    <p id="exc1">1 RUB = 0.0135 USD</p>
+                </div>
+            </div>
+            <div class="after">
+                <p>Хочу приобрести</p>
+                <div class="valute2">
+
+                    <input id="RUB" name="alt" type="radio">
+                    <label class='first' for="RUB">RUB</label>
+
+                    <input checked="true" id="USD" name="alt" type="radio">
+                    <label for="USD">USD</label>
+
+                    <input id="EUR" name="alt" type="radio">
+                    <label for="EUR">EUR</label>
+
+                    <input id="GBP" name="alt" type="radio">
+                    <label class='last' for="GBP">GBP</label>
+                </div>
+                <div class="calculator">
+                    <div class="result"></div>
+                    <p id="exc2">1 RUB = 0.0135 USD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="main.js"></script>
+</body>
+
+</html> 
